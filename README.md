@@ -8,6 +8,10 @@ The system uses a custom-trained YOLO11 object detection model to detect workers
 
 It then performs worker-level analysis using bounding-box spatial association and generates safety alerts.
 
+## 🌐 Live Demo
+
+🚀 [Try the Live Application](https://industrial-vision-inspector.streamlit.app)
+
 ### Pipeline
 
 Image
@@ -125,23 +129,23 @@ industrial-vision-inspector/
 ├── README.md
 └── .gitignore
 
-⚙️ Installation
+## ⚙️ Installation
 
 Clone the repository:
 
-git clone <YOUR-GITHUB-REPOSITORY-URL>
+git clone https://github.com/ramya-devs/industrial-vision-inspector
 cd industrial-vision-inspector
 
 Install dependencies:
-
 pip install -r requirements.txt
+
 ▶️ Run the Application
 streamlit run app.py
 The application will open in your browser.
 
 Upload a construction-site image to perform PPE detection and safety analysis.
 
-📄 Inspection Report
+## 📄 Inspection Report
 
 The application generates a downloadable inspection report containing:
 
@@ -151,23 +155,31 @@ Helmet compliance
 Vest compliance
 Worker-level analysis
 Safety alerts
-⚠️ Limitations
+
+## ⚠️ Limitations
 
 This project is a Computer Vision prototype for portfolio and demonstration purposes.
 
-PPE association is based on bounding-box spatial relationships.
-Performance depends on image quality and camera angle.
-The dataset does not contain a dedicated no_vest class.
-The system should not be treated as a certified industrial safety system.
-🔮 Future Improvements
-Real-time video detection
-Multi-object tracking
-Improved PPE association
-More safety rules
-Hard-hat/vest violation tracking over time
-Cloud deployment
-Alert notifications
-Better model performance with additional training data
-👩‍💻 Author
+* PPE association is based on bounding-box spatial relationships.
+* Performance depends on image quality and camera angle.
+* The dataset does not contain a dedicated no_vest class.
+* The system should not be treated as a certified industrial safety system.
+
+## 🔮 Future Improvements
+
+-Real-time video detection
+-Multi-object tracking
+-Improved PPE association
+-More safety rules
+-Hard-hat/vest violation tracking over time
+-Cloud deployment
+-Alert notifications
+-Better model performance with additional training data
+
+## 👩‍💻 Author
 
 Ramya
+
+GitHub: ramya-devs
+
+Live Demo: https://industrial-vision-inspector.streamlit.app/
